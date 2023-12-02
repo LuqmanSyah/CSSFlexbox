@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: lightseagreen;
+  line-height: 1.65;
+}
+
+/* Latihan 1 */
+.container-satu {
+  max-width: 960px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.main-column {
+  flex: 3;
+  order: 2;
+  padding: 10px;
+}
+
+.sidebar-1 {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-2 {
+  flex: 1;
+  order: 3;
+}
+
+/* End */
+
+/* Latihan 2 */
+.container-dua {
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.layanan {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.layanan.satu {
+  background-color: lightblue;
+}
+
+.layanan.dua {
+  background-color: lightgreen;
+}
+
+.layanan.tiga {
+  background-color: lightyellow;
+}
+
+/* End */
+
+/* Responsive */
+@media (min-width:600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+}
