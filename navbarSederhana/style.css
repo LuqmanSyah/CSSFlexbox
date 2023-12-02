@@ -63,7 +63,52 @@ nav ul li a:hover {
   font-size: 80px;
   color: #f1f9fe;
   -webkit-text-stroke: 1px #09689b;
+  text-shadow: 2px 2px 8px black;
   text-align: center;
+}
+
+main {
+  padding: 20px 50px;
+}
+
+main .section-1 h2 {
+  font-size: 40px;
+}
+
+main .section-1 p a {
+  text-decoration: none;
+  color: #09689b;
+  padding-bottom: 3px;
+  font-size: large;
+  border-bottom: 1px solid #09689b00;
+  transition: all 0.8s;
+}
+
+main .section-1 p a:hover {
+  color: #17a3e0;
+  border-bottom: 1px solid #17a3e0;
+}
+
+
+main .section-1 .card {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+main .section-1 .card-item  {
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px lightseagreen;
+}
+
+main .card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,6 +133,23 @@ nav ul li a:hover {
   .hamburger-icon {
     display: block;
   }
+
+  main .section-1 .card-item {
+    padding: 15px;
+  }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  main {
+    padding: 20px;
+  }
+
+  main .section-1 .card {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  main .section-1 .card-item {
+    padding: 20px;
+  }
+}
