@@ -32,6 +32,14 @@ nav ul {
   list-style: none;
 }
 
+nav ul li:nth-child(1) a {
+  color: #17a3e0;
+  border-bottom: 1px solid #17a3e0;
+  font-weight: 500;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
 nav ul li a {
   text-decoration: none;
   color: #09689b;
