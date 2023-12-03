@@ -71,6 +71,7 @@ main {
   padding: 20px 50px;
 }
 
+/* Destination Section */
 main .section-1 h2 {
   font-size: 40px;
 }
@@ -102,15 +103,71 @@ main .section-1 .card-item  {
   margin-bottom: 30px;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px 8px lightseagreen;
+  box-shadow: 2px 2px 8px rgba(224, 255, 255, 0);
+  transition: all 0.5s;
 }
 
-main .card img {
+main .section-1 .card-item:hover {
+  box-shadow: 4px 4px 10px lightslategray;
+}
+
+main .section-1 .card .card-item img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   margin-bottom: 20px;
 }
+/* End */
 
+/* Gallery Section */
+main .section-2 h2 {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+main .section-2 p a {
+  text-decoration: none;
+  color: #09689b;
+  padding-bottom: 3px;
+  font-size: large;
+  border-bottom: 1px solid #09689b00;
+  transition: all 0.8s;
+}
+
+main .section-2 p a:hover {
+  color: #17a3e0;
+  border-bottom: 1px solid #17a3e0;
+}
+
+
+main .section-2 .card {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+main .section-2 .card-item  {
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(32, 178, 171, 0);
+  transition: all 0.3s;
+}
+
+main .section-2 .card-item:hover {
+  box-shadow: 4px 4px 10px lightslategray;
+}
+
+main .section-2 .card .card-item img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+}
+/* End */
+
+/* Responsive */
+/* Tablet */
 @media screen and (max-width: 768px) {
   nav {
     padding: 20px;
@@ -138,7 +195,9 @@ main .card img {
     padding: 15px;
   }
 }
+/* End */
 
+/* Mobile */
 @media screen and (max-width: 576px) {
   main {
     padding: 20px;
@@ -153,3 +212,4 @@ main .card img {
     padding: 20px;
   }
 }
+/* End */
